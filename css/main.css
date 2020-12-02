@@ -124,6 +124,7 @@ a {
 	color: #fff;
 	text-align: center;
 	padding: 0 80px;
+
 }
 
 .main-section-download {
@@ -180,10 +181,12 @@ a {
 .main-section-stats ul {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.main-section ul li {
+.main-section-stats ul li {
 	padding: 0 20px;
+	padding-bottom: 10px;
 }
 
 .main-section-stats a {
