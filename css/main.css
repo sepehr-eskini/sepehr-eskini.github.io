@@ -83,6 +83,7 @@ h4 {
 
 .large-text {
 	font-size: 20px;
+	line-height: 26px;
 	font-weight: 300;
 	color: #fff;
 	text-align: center;
@@ -303,7 +304,7 @@ h4 {
 }
 .get-involved-section-items ul li {
 	position: relative;
-	flex: calc(33.33% - 4%);
+	flex: calc(33.33% - 3%);
 	text-align: center;
 	border: 1px solid #e5e5e5;
 	margin: 0 1.5%;
@@ -375,7 +376,87 @@ h4 {
 	margin: 0;
 }
 
+.open-source-section {
+	background-color: #3dc0f1;
+}
+
+.open-source-section-items ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0 7%;
+	padding-top: 30px;
+}
+
+.open-source-section-items ul li {
+	flex: 33.33%;
+	text-align: center;
+	padding: 5px 1.5%;
+}
+
+.open-source-section-items ul li:not(:last-child) {
+	border-right: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+.footer-section {
+	background-color: #252525;
+	text-align: center;
+}
+
+.footer-section ul {
+	color: #ddd;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.footer-section ul li {
+	padding-left: 10px;
+}
+
+.footer-section ul li:not(:first-child):before {
+	content: "";
+	margin-right: 10px;
+	border-left: 1px solid #E5E5E5;
+	display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+}
+
+.footer-section ul li:last-child {
+	margin-right: 11px;
+}
+
+.footer-section ul li a {
+	font-size: 14px;
+	color: #ddd;
+	transition: all 0.1s ease-out;
+}
+
+.footer-section ul li a:hover {
+	color: #fff;
+}
+
+.footer-section p {
+	color: #ddd
+}
+
+.footer-section p a {
+	color: #ddd;
+	text-decoration: none;
+	transition: all 0.1s ease-out;
+}
+
+.footer-section p a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
 @media only screen and (max-width: 835px) {
+	h1 {
+		font-size: 40px;
+	}
+
 	.navigation ul {
 		display: none;
 	}
@@ -418,18 +499,48 @@ h4 {
 		width: 200px;
 	}
 
+	.get-involved-section {
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+
 	.get-involved-section-items ul {
 		flex-direction: column;
-		padding: 0 4%;
+		padding: 0;
+		padding-top: 25px;
 	}
 
 	.get-involved-section-items ul li {
 		margin: 0;
 		margin-bottom: 55px;
 	}
+
+	.open-source-section {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	.open-source-section-items ul {
+		flex-direction: column;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.open-source-section-items ul li:not(:last-child) {
+		border-right: none;
+	}
+
+	.footer-section {
+		padding-right: 7%;
+		padding-left: 7%;
+	}
 }
 
 @media only screen and (max-width: 350px) {
+	h1 {
+		font-size: 28px;
+	}
+
 	.large-text {
 		font-size: 16px;
 	}
