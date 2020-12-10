@@ -107,11 +107,13 @@ h4 {
 
 .main-container {
 	transition: all 0.3s ease-out;
+	width: 100%;
 }
 
 .main-container-open-side {
 	position: fixed;
 	margin-left: 270px;
+	width: 100%;
 	transition: all 0.3s ease-out;
 }
 
