@@ -23,15 +23,23 @@ var sideMenuParentItem = document.getElementsByClassName("side-menu-parent-item"
 var sideMenuSubItemContainer = document.getElementsByClassName("side-menu-sub-item-container");
 var sideMenuParentItemCount = sideMenuParentItem.length;
 for(let i = 0 ; i < sideMenuParentItemCount ; i++) {
+    var parentExpand = [];
     sideMenuParentItem[i].onclick = function() {
-        if(sideMenuSubItemContainer[i].classList.contains("show")) {
-            sideMenuSubItemContainer[i].classList.remove("show");
-            sideMenuParentItem[i].children[0].children[0].classList.remove("fa-angle-down");
-            sideMenuParentItem[i].children[0].children[0].classList.add("fa-angle-left");
+        if(parentExpand[i]) {
+            sideMenuSubItemContainer[i].style.height = 0;
+            sideMenuSubItemContainer[i].style.display = "none";
+            sideMenuParentItem[i].children[0].id = "";
+            sideMenuParentItem[i].children[0].children[1].classList.remove("fa-angle-down");
+            sideMenuParentItem[i].children[0].children[1].classList.add("fa-angle-left");
+            parentExpand[i] = false;
         } else {
-            sideMenuSubItemContainer[i].classList.add("show");
-            sideMenuParentItem[i].children[0].children[0].classList.remove("fa-angle-left");
-            sideMenuParentItem[i].children[0].children[0].classList.add("fa-angle-down");
+            sideMenuSubItemContainer[i].style.display = "block";
+            sideMenuSubItemContainer[i].style.height = sideMenuSubItemContainer[i].scrollHeight + "px";
+            sideMenuParentItem[i].children[0].id = "active-parent";
+            sideMenuParentItem[i].children[0].children[1].classList.remove("fa-angle-left");
+            sideMenuParentItem[i].children[0].children[1].classList.add("fa-angle-down");
+            parentExpand[i] = true;
         }
     }
 }
+

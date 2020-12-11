@@ -469,7 +469,7 @@ h4 {
 	left: 0px;
 	top: 0;
 	bottom: 0;
-	background-color: red;
+	background-color: #333;
 	width: 270px;
 	max-width: 100%;
 	height: 100%;
@@ -493,11 +493,16 @@ h4 {
 }
 
 .side-menu-container ul {
-	border-bottom: 1px solid rgba(0,0,0,.3);
     box-shadow: 0 1px 0 rgba(255,255,255,.05);
 }
 
-.side-menu-parent-item i {
+.side-menu-parent-item i:first-child {
+	width: 14px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.side-menu-parent-item i:last-child {
 	width: 10px;
 	float: right;
 	font-size: 14px;
@@ -523,14 +528,16 @@ h4 {
 	color: #fff;
 }
 
-.side-menu-sub-item-container {
-	max-height: 0;
+#active-parent {
 	background-color: #404040;
-	transition: all 0.3s ease-out;
+	color: #fff;
 }
 
-.show {
-	max-height: 100px;
+.side-menu-sub-item-container {
+	display: none;
+	height: 0;
+	background-color: #404040;
+	transition: all 300ms ease-out;
 }
 
 .side-menu-sub-item-container ul {
@@ -557,6 +564,28 @@ h4 {
 
 .side-menu-sub-item > a:hover {
 	color: #fff;
+}
+
+.side-menu-header-item {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 3px 15px;
+	color: #777;
+    margin-top: 0;
+    background: #404040;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+	border-top: 1px solid rgba(0,0,0,.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	transition: all 0.3s ease-out;
+}
+
+.side-menu-devider {
+	border-top: 1px solid rgba(255,255,255,.01);
+    margin: 0;
+    height: 4px;
+    background: rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
 }
 
 @media only screen and (max-width: 835px) {
