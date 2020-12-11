@@ -497,12 +497,14 @@ h4 {
 }
 
 .side-menu-parent-item i:first-child {
+	text-align: center;
 	width: 14px;
 	font-size: 14px;
 	line-height: 20px;
 }
 
 .side-menu-parent-item i:last-child {
+	text-align: center;
 	width: 10px;
 	float: right;
 	font-size: 14px;
