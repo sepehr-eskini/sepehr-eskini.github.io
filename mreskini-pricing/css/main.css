@@ -15,6 +15,14 @@
 	font-style: normal;
 }
 
+@font-face {
+    font-family: 'BRoya';
+	src: url('../fonts/BRoya.eot');
+	src: url('../fonts/BRoya.woff') format('woff');
+	src: url('../fonts/BRoya.ttf') format('truetype');
+	font-style: normal;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -23,6 +31,10 @@
     width: 100%;
 	font-family: 'Sahel' !important;
 	direction: rtl;
+}
+
+.persian-number {
+	font-family: 'BRoya';
 }
 
 .cs-pricing-section {
@@ -83,6 +95,10 @@
 .cs-plan-options > li > p {
 	vertical-align: middle;
 	font-size: 0.8vw;
+}
+
+.cs-plan-options > li > p span{
+	font-size: 1.2vw;
 }
 
 .cs-plan-options > li > p > i {
@@ -148,6 +164,10 @@
 	.cs-plan-options {
 		height: 18vw;
 	}
+
+	.cs-plan-options > li > p span{
+		font-size: 2vw;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -186,5 +206,9 @@
 
 	.cs-plan-options {
 		height: 24vw;
+	}
+
+	.cs-plan-options > li > p span{
+		font-size: 2.5vw;
 	}
 }
