@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Sahel';
+	src: url('../fonts/Sahel.eot');
+	src: url('../fonts/Sahel.woff') format('woff');
+	src: url('../fonts/Sahel.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sahel';
+	src: url('../fonts/Sahel-Bold.eot');
+	src: url('../fonts/Sahel-Bold.woff') format('woff');
+    src: url('../fonts/Sahel-Bold.ttf') format('truetype');
+    font-weight: bold;
+	font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cs-container {
+    width: 100%;
+	font-family: 'Sahel' !important;
+	direction: rtl;
+}
+
+.cs-pricing-section {
+	padding: 5% 3%;
+}
+
+.cs-pricing-section ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+}
+
+.cs-pricing-section a {
+	text-decoration: none;
+}
+
+.cs-pricing-section ul {
+	padding: 0 1%;
+}
+
+.cs-pricing-section > ul > li {
+	position: relative;
+	margin-bottom: 20px;
+	margin-right: 0;
+	box-shadow: -8px 8px 8px 0 rgba(0,0,0,0.25);
+	padding: 1.5% 1%;
+}
+
+.cs-pricing-section > ul > li {
+	float: right;
+	width: calc(20% - 2%);
+	margin: 1%;
+	margin-top: 0;
+	margin-bottom: 5%;
+}
+
+.cs-plan-time {
+	font-size: 1.5vw;
+}
+
+.cs-plan-price {
+	font-size: 1.3vw;
+}
+
+.cs-plan-price span {
+	font-size: 2vw;
+}
+
+.cs-plan-time, .cs-plan-price {
+	text-align: center;
+}
+
+.cs-plan-options {
+	height: 13vw;
+}
+
+.cs-plan-options > li > p {
+	vertical-align: middle;
+	font-size: 0.8vw;
+}
+
+.cs-plan-options > li > p > i {
+	font-size: 1vw;
+	vertical-align: middle;
+	color: #32ba4e;
+	margin-left: 4%;
+}
+
+.cs-plan-button {
+	position: absolute;
+	left: 0;
+	bottom: 5%;
+	width: 100%;
+	text-align: center;
+}
+
+.cs-plan-button a {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding: 1% 2%;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.5vw;
+	background-image: linear-gradient(to right,  rgb(10,28,31), rgb(112,193,210));
+}
+
+@media only screen and (max-width: 768px) {
+	.cs-pricing-section > ul > li {
+		width: calc(50% - 2%);
+	}
+
+	.cs-plan-options > li > p {
+		font-size: 1.2vw;
+	}
+
+	.cs-plan-options > li > p > i {
+		font-size: 1.5vw;
+	}
+
+	.cs-plan-button a {
+		font-size: 2.0vw;
+		width: 40%;
+	}
+
+	.cs-pricing-section ul {
+		padding: 0 2%;
+	}
+
+	.cs-plan-time {
+		font-size: 2.1vw;
+	}
+
+	.cs-plan-price {
+		font-size: 1.8vw;
+	}
+
+	.cs-plan-price span {
+		font-size: 2.8vw;
+	}
+
+	.cs-plan-options {
+		height: 18vw;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.cs-pricing-section > ul > li {
+		width: calc(100% - 2%);
+	}
+
+	.cs-plan-options > li > p {
+		font-size: 1.5vw;
+	}
+
+	.cs-plan-options > li > p > i {
+		font-size: 1.7vw;
+	}
+
+	.cs-plan-button a {
+		font-size: 2.5vw;
+		width: 20%;
+	}
+
+	.cs-pricing-section ul {
+		padding: 0 4%;
+	}
+
+	.cs-plan-time {
+		font-size: 2.7vw;
+	}
+
+	.cs-plan-price {
+		font-size: 2.4vw;
+	}
+
+	.cs-plan-price span {
+		font-size: 3.6vw;
+	}
+
+	.cs-plan-options {
+		height: 24vw;
+	}
+}
