@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google icon font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/authentication.css">
+</head>
+<body>
+
+    <div class="container" id="authentication">
+        <div class="row pt-30 pb-10">
+            <div class="col s12 m6 l6 offset-m3 offset-l3 white opacity-8 z-depth-4 radius-6 pt-10 pb-10">
+                <form action="" method="">
+                    <div class="input-field">
+                        <h5 class="center-align">Sign In</h5>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">person_outline</i>
+                        <input type="text" id="username" name="username">
+                        <label for="username">Username</label>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock_outline</i>
+                        <input type="password" id="password" name="password">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="input-field">
+                        <p>
+                            <label>
+                                <input type="checkbox" name="rememberMe">
+                                <span>Remember Me</span>
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="input-field pt-10 pb-10">
+                        <button class="btn full-width radius-6 gr-indigo-orange waves-effect waves-light" type="submit" name="login">Login</button>
+                    </div>
+
+                    <a href="register.html" class="a-under-300 left indigo-text text-lighten-1">Register Now!</a>
+                    <a href="forgot-password.html" class="a-under-300 right indigo-text text-lighten-1">Forgot Password ?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
+</body>
+</html>

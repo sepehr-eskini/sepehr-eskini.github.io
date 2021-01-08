@@ -2,11 +2,6 @@ body {
     background: url(../img/flat-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
-}
-
-.h-100 {
-    height: auto;
 }
 
 .opacity-8 {
@@ -44,7 +39,7 @@ body {
 }
 
 .gr-indigo-orange {
-    background: linear-gradient(45deg,#3d5afe,#ff3d00);
+    background: linear-gradient(45deg,#3d5afe,#ff3d00) !important;
 }
 
 input:focus {
