@@ -15,79 +15,264 @@
 </head>
 <body>
 
-    <!-- Navbar Begin -->
-    <ul id="notifications" class="dropdown-content">
+    <!-- Navbar Dropdowns Begin -->
+    <ul id="notifications" class="dropdown-content nav-dropdown-top nav-dropdown-left">
+        <li>
+            <span class="black-text">Notifications</span>
+        </li>
+
+        <li class="divider"></li>
+
         <li>
             <a href="#">
-                <i class="material-icons indigo-text">how_to_reg</i>
+                <i class="material-icons black-text">how_to_reg</i>
                 <span class="new badge indigo">3</span>
-                <span class="indigo-text">User Registration</span>
+                <span class="black-text">User Registration</span>
             </a>
         </li>
 
-        <li class="divider"></li>
-
         <li>
             <a href="#">
-                <i class="material-icons indigo-text">payment</i>
-                <span class="new badge indigo">5</span>
-                <span class="indigo-text">Invoice Payment</span>
+                <i class="material-icons black-text">content_paste</i>
+                <span class="black-text">Monthly Report Generated</span>
             </a>
         </li>
 
-        <li class="divider"></li>
-
         <li>
             <a href="#">
-                <i class="material-icons indigo-text">content_paste</i>
-                <span class="indigo-text">Monthly Report Generated</span>
-            </a>
-        </li>
-
-        <li class="divider"></li>
-
-        <li>
-            <a href="#">
-                <i class="material-icons indigo-text">message</i>
+                <i class="material-icons black-text">message</i>
                 <span class="new badge indigo">12</span>
-                <span class="indigo-text">Messages</span>
+                <span class="black-text">Messages</span>
             </a>
         </li>
     </ul>
 
-    <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper indigo lighten-5">
-            <ul class="right">
-                <li class="active">
-                    <a href="#" class="btn-floating indigo">
-                        <i class="material-icons">person</i>
-                    </a>
-                </li>
+    <ul id="profile" class="dropdown-content nav-dropdown-top nav-dropdown-left">
+        <li>
+            <span class="black-text">Account Setting</span>
+        </li>
 
-                <li>
-                    <a href="#" class="btn-floating indigo dropdown-trigger pulse" data-target="notifications">
-                        <i class="material-icons">notifications</i>
-                        <span class="small-badge light-green white-text z-depth-3">5</span>
-                    </a>
-                </li>
-            </ul>
-          </div>
+        <li class="divider"></li>
+
+        <li>
+            <a href="#">
+                <i class="material-icons black-text">create</i>
+                <span class="black-text">Edit Profile</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="material-icons black-text">lock_open</i>
+                <span class="black-text">Change Password</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="material-icons black-text">exit_to_app</i>
+                <span class="black-text">Log Out</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul id="languages" class="dropdown-content nav-dropdown-top nav-dropdown-left">
+        <li>
+            <span class="black-text">Languages</span>
+        </li>
+
+        <li class="divider"></li>
+
+        <li>
+            <a href="#">
+                <img src="./img/united-kingdom.png">
+                <span class="black-text">English</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="./img/france.png">
+                <span class="black-text">French</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="./img/portugal.png">
+                <span class="black-text">Potuguese</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="./img/germany.png">
+                <span class="black-text">German</span>
+            </a>
+        </li>
+    </ul>
+    <!-- Navbar Dropdowns End -->
+
+    <!-- Navbar Begin -->
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="navbar-width">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="slide-out" class="left sidenav-trigger center"><i class="material-icons black-text">menu</i></a>
+
+                    <ul class="right">
+                        <li>
+                            <a href="#" class="dropdown-trigger" data-target="languages">
+                                <i class="material-icons black-text">language</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown-trigger pulse" data-target="notifications">
+                                <i class="material-icons black-text">notifications_none</i>
+                                <span class="small-badge light-green white-text z-depth-3">5</span>
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="#" class="dropdown-trigger" data-target="profile">
+                                <i class="material-icons black-text">person_outline</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
       </div>
     <!-- Navbar End -->
+
+    <!-- Sidenav Begin -->
+    <ul id="slide-out" class="collapsible sidenav sidenav-fixed dark-bg">
+        <li class="menu-brand">
+
+        </li>
+
+        <li>
+            <a href="#" class="collapsible-header waves-effect manu-item-bg">
+                <i class="material-icons">settings_input_svideo</i>
+                <span class="">Dashboard</span>
+                <i class="material-icons right expand-icon change-arrow">keyboard_arrow_right</i>
+            </a>
+
+            <div class="collapsible-body">
+                <ul>
+                    <li>
+                        <a href="#" class="waves-effect manu-item-bg">
+                            <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                            <span class="">Modern</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect manu-item-bg menu-item-active">
+                            <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                            <span class="">eCommerce</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect manu-item-bg">
+                            <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                            <span class="">Analytics</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="collapsible-header waves-effect manu-item-bg">
+                <i class="material-icons">dvr</i>
+                <span class="">Templates</span>
+                <i class="material-icons right expand-icon change-arrow">keyboard_arrow_right</i>
+            </a>
+
+            <div class="collapsible-body">
+                <ul class="collapsible">
+                    <li>
+                        <a href="#" class="collapsible-header waves-effect manu-item-bg">
+                            <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                            <span class="">Vertical</span>
+                            <i class="material-icons right expand-icon change-arrow">keyboard_arrow_right</i>
+                        </a>
+
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="waves-effect manu-item-bg">
+                                        <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                                        <span class="">Modern Menu</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="waves-effect manu-item-bg menu-item-active">
+                                        <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                                        <span class="">Navbar Dark</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="waves-effect manu-item-bg">
+                                        <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                                        <span class="">Gradient Menu</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="waves-effect manu-item-bg">
+                                        <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                                        <span class="">Dark Menu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="collapsible-header waves-effect manu-item-bg">
+                            <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                            <span class="">Horizontal</span>
+                            <i class="material-icons right expand-icon change-arrow">keyboard_arrow_right</i>
+                        </a>
+
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="waves-effect manu-item-bg">
+                                        <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
+                                        <span class="">Horizontal Menu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- Sidenav End -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Compiled and minified JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Custom JS -->
+    <!-- Custom JS Begin -->
+    <script src="./script/dashboard.js"></script>
     <script>
         $(document).ready(function() {
             $(".dropdown-trigger").dropdown({
                 alignment: 'right',
                 constrainWidth: false
             });
+
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
         });
     </script>
 </body>

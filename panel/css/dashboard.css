@@ -1,13 +1,102 @@
 .small-badge {
-    line-height: 20px;
-    width: 20px;
+    line-height: 14px;
+    width: 14px;
+    font-size: 11px;
     text-align: center;
     border-radius: 50%;
     position: absolute;
-    top: -8px;
+    top: 15px;
     left: 25px;
 }
 
-.top-100p {
-    top: 100%;
+.nav-dropdown-top {
+    top: -65px;
+}
+
+.nav-dropdown-left {
+    left: 0;
+}
+
+.navbar-width {
+    width: 94%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.dark-bg {
+    background: #2c323f;
+}
+
+#languages img {
+    height:25px;
+    vertical-align: middle;
+    margin-right: 18px;
+}
+
+.sidenav {
+    width: 250px;
+}
+
+#slide-out {
+    border: none;
+}
+
+#slide-out a, #slide-out i {
+    color: white;
+}
+
+.expand-icon {
+    margin-right: 0 !important;
+}
+
+#slide-out a:not(.menu-item-active):hover {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+#slide-out a.menu-item-active:hover {
+    background: #0288D1 !important;
+}
+
+#slide-out i {
+    margin-right: 20px;
+}
+
+.sidenav li a {
+    border-radius: 0 25px 25px 0;
+    margin-right: 20px;
+}
+
+.menu-item-active {
+    background: #0288D1;
+}
+
+.sidenav li.active {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.sidenav .collapsible-body {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.sidenav .collapsible-body li a {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.small-icon-fs {
+    font-size: 11px !important;
+}
+
+.sidenav-trigger {
+    width: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-dropdown-top {
+        top: -58px;
+    }
+
+    .nav-dropdown-left {
+        left: 0;
+    }
 }
