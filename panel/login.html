@@ -13,11 +13,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/authentication.css">
 </head>
-<body>
+<body class="valign-wrapper">
 
     <div class="container" id="authentication">
         <div class="row pt-30 pb-10">
-            <div class="col s12 m6 l6 offset-m3 offset-l3 white opacity-8 z-depth-4 radius-6 pt-10 pb-10">
+            <div class="col s12 m6 l6 offset-m3 offset-l3 bg-white z-depth-4 radius-6 pt-10 pb-10">
                 <form action="" method="">
                     <div class="input-field">
                         <h5 class="center-align">Sign In</h5>
@@ -27,12 +27,14 @@
                         <i class="material-icons prefix">person_outline</i>
                         <input type="text" id="username" name="username">
                         <label for="username">Username</label>
+                        <div class="red-text text-lighten-1 pl-42 fs-12"></div>
                     </div>
 
                     <div class="input-field">
                         <i class="material-icons prefix">lock_outline</i>
                         <input type="password" id="password" name="password">
                         <label for="password">Password</label>
+                        <div class="red-text text-lighten-1 pl-42 fs-12"></div>
                     </div>
 
                     <div class="input-field">
@@ -45,7 +47,7 @@
                     </div>
 
                     <div class="input-field pt-10 pb-10">
-                        <button class="btn full-width radius-6 gr-indigo-orange waves-effect waves-light" type="submit" name="login">Login</button>
+                        <button class="btn full-width radius-6 gr-indigo waves-effect waves-light" type="submit" name="login">Login</button>
                     </div>
 
                     <a href="register.html" class="a-under-300 left indigo-text text-lighten-1">Register Now!</a>
