@@ -70,12 +70,16 @@
     background: #0288D1;
 }
 
-.sidenav li.active {
+.sidenav  li.active {
+    background-color: rgba(255, 255, 255, 0.00) !important;
+}
+
+.sidenav > li.active {
     background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .sidenav .collapsible-body {
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0.00) !important;
 }
 
 .sidenav .collapsible-body li a {
@@ -89,6 +93,11 @@
 
 .sidenav-trigger {
     width: 40px;
+}
+
+.sidenav li.active > a i:last-of-type {
+    transition: transform 300ms ease-out;
+    transform: rotate(90deg);
 }
 
 @media screen and (max-width: 600px) {
