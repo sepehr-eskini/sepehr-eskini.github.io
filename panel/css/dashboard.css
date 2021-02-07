@@ -100,6 +100,20 @@
     transform: rotate(90deg);
 }
 
+.main-content-container {
+    margin-left: 250px;
+}
+
+.main-content-item-margin-top {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .main-content-container {
+        margin-left: 0;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .nav-dropdown-top {
         top: -58px;

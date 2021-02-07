@@ -244,7 +244,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="charts.html" class="waves-effect manu-item-bg">
+                                    <a href="charts.html" class="waves-effect manu-item-bg menu-item-active">
                                         <i class="material-icons small-icon-fs center">radio_button_unchecked</i>
                                         <span class="">Charts</span>
                                     </a>
@@ -282,8 +282,17 @@
             });
 
             $('.sidenav').sidenav();
-            $('.collapsible').collapsible();
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+            var instance = instances[0];
+            instance.open(2);
+            var instance = instances[1];
+            instance.open(1);
+        });
+
     </script>
     <!-- Custom JS End -->
 </body>
