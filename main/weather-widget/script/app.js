@@ -20,7 +20,6 @@ changeBtn.addEventListener('click', (e) => {
 function getWeather() {
     weather.getWeather()
         .then(result => {
-            console.log(result);
             ui.paint(result);
         })
         .catch(err => console.log(err))
